@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar producto</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="assets/imagenes/encabezado1.jpg" alt="encabezado1"></div>
+            <div class="slide"><img src="assets/imagenes/encabezado2.png" alt="encabezado2"></div>
+            <div class="slide"><img src="assets/imagenes/encabezado3.jpeg" alt="encabezado3"></div>
+        </div>
+    </div>
+
+    <!-- Sección del catálogo -->
+    <section id="catalogo">
+        <h1>Catálogo de productos</h1>
+        <div class="productos">
+            <div class="producto">
+                <img src="assets/imagenes/airtag.png" alt="Airtag" width="300" height="200">
+                <h3>Airtag</h3>
+                <p>Precio: $100</p>
+                <p>Stock: 50 unidades</p>
+                <a href="vista_producto.html?producto=Airtag&precio=100&stock=50"><button>Comprar</button></a>
+            </div>
+            <div class="producto">
+                <img src="assets/imagenes/airpods4.jpg" alt="Airpods 4" width="300" height="200">
+                <h3>Airpods 4</h3>
+                <p>Precio: $200</p>
+                <p>Stock: 50 unidades</p>
+                <a href="vista_producto.html?producto=Airpods%204&precio=200&stock=50"><button>Comprar</button></a>
+            </div>
+            <div class="producto">
+                <img src="assets/imagenes/apple watch series10.jpeg" alt="Apple Watch Series 10" width="300" height="200">
+                <h3>Apple Watch Series 10</h3>
+                <p>Precio: $300</p>
+                <p>Stock: 50 unidades</p>
+                <a href="vista_producto.html?producto=Apple%20Watch%20Series%2010&precio=300&stock=50"><button>Comprar</button></a>
+            </div>
+            <div class="producto">
+                <img src="assets/imagenes/iphone 16 pro.jpeg" alt="Iphone 16 Pro" width="300" height="200">
+                <h3>Iphone 16 Pro</h3>
+                <p>Precio: $26000</p>
+                <p>Stock: 50 unidades</p>
+                <a href="vista_producto.html?producto=Iphone%2016%20Pro&precio=26000&stock=50"><button>Comprar</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Comentarios</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
+
